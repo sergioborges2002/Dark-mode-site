@@ -1,0 +1,41 @@
+:root {
+    --green:#00ff00;
+    --white:#ffffff;
+    --black:#000000;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+
+}
+.dark-mode {
+   background-color: var(--black);
+   color:var(--green);
+   border-color: green;
+
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: groove;
+    border-color: black;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.btn:focus {
+    outline-style: none;
+}
+
+body {
+background-color: white;
+color: black;
+}
