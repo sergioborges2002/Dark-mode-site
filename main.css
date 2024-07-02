@@ -1,5 +1,5 @@
 :root {
-    --green:#00ff00;
+    --green:#03db03;
     --white:#ffffff;
     --black:#000000;
 }
@@ -9,22 +9,37 @@
     font-family: helvetica;
 
 }
-.dark-mode {
-   background-color: var(--black);
-   color:var(--green);
-   border-color: green;
+
+body {
+    background: var(--bg);
+}
+
+.light-theme {
+  --bg:var(--green);
+  --fontColor:var(--black);
+  --btnBg: var(--black);
+  --btnFontColor:var(--white);
+  --btnBorderColor:var(--white);
+}
+.dark-theme {
+   --bg: var(--black);
+   --fontColor:var(--green);
+   --btnBg:var(--black);
+   --btnFontColor:var(--green);
+   --btnBorderColor:var(--white);
+   
 
 }
 
-button {
+.btn {
     position: absolute;
     top: 20px;
     left: 250px;
-    height: 70px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
-    border: groove;
-    border-color: black;
+    border: outset;
+    border-color: white;
     color: var(--btnFontColor);
     background-color: var(--btnBg);
     font-size: 25px;
@@ -35,7 +50,14 @@ button {
     outline-style: none;
 }
 
-body {
-background-color: white;
-color: black;
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+#msg {
+    font-family: monospace;
 }
