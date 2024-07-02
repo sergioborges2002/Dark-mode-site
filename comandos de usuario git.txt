@@ -1,0 +1,11 @@
+mudar usuário e email
+
+git config --global user.name "name"
+git config --global user.email "email"
+
+checar usuário e email
+
+git config user.name
+git config user.email
+
+
